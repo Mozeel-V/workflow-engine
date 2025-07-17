@@ -74,6 +74,35 @@ Server will start at `http://localhost:5044` or a nearby port.
 
 ---
 
+## 🧪 Unit Testing
+
+This project includes a basic unit test suite written using [xUnit](https://xunit.net/) to validate core workflow functionality.
+
+### ✅ Covered Test Scenarios:
+
+| Test Case | Description |
+|-----------|-------------|
+| `WorkflowDefinition_Should_Have_One_Initial_State` | Ensures that a workflow definition is invalid if it contains more than one initial state. |
+| `Can_Transition_From_Valid_State` | Simulates a valid action execution and verifies that the workflow instance transitions to the correct state and logs the transition. |
+
+---
+
+### 🛠 How to Run Tests
+
+Make sure the app is **not running** in another terminal (stop it with `Ctrl+C` if needed), then:
+
+```bash
+dotnet test
+```
+
+You should see output indicating the test results:
+
+```bash
+Passed!  - Failed: 0, Passed: 2, Skipped: 0
+```
+
+---
+
 ## 🔍 Assumptions & Design Notes
 
 - Each workflow must contain **exactly one** `isInitial: true` state.
