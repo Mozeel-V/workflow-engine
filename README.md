@@ -95,10 +95,10 @@ Make sure the app is **not running** in another terminal (stop it with `Ctrl+C` 
 dotnet test
 ```
 
-You should see output indicating the test results:
+You should see output indicating the test results like:
 
 ```bash
-Passed!  - Failed: 0, Passed: 2, Skipped: 0
+Test summary: total: 2, failed: 0, succeeded: 2, skipped: 0, duration: 2.4s
 ```
 
 ---
